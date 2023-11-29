@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: activities
+  config:
+    import: optional:configserver:http://localhost:8888
