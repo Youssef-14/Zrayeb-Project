@@ -1,0 +1,20 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: auth
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/Tourisme
+    username: postgres
+    password: "0000"
+  jpa:
+    hibernate:
+      ddl-auto: create
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
