@@ -1,0 +1,30 @@
+.background,
+.background * {
+    box-sizing: border-box;
+}
+
+.background {
+    background: var(--color-gray, #ffffff);
+    border-radius: 14px;
+    border-style: solid;
+    border-color: var(--color-gray-3, #a098ae);
+    border-width: 1px;
+    width: 152.67px;
+    height: 130px;
+    position: relative;
+}
+
+._1,
+._1 * {
+    box-sizing: border-box;
+}
+
+._1 {
+    color: var(--color-gray-3, #303972);
+    text-align: left;
+    font-family: var(--heading-heading-3-font-family, 'Poppins-Bold', sans-serif);
+    font-size: var(--heading-heading-3-font-size, 24px);
+    font-weight: var(--heading-heading-3-font-weight, 700);
+    position: relative;
+    width: 33.31px;
+}
