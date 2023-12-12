@@ -4,22 +4,27 @@
       <div class="login-form">
         <h1 class="text-center login-form-h1 pt-4 pb-4">Welcome to Zrayeb</h1>
         <p class="text-center login-form-text pb-3">Enter your Credentials to access your account</p>
-        <div class="form-group">
+        <form class="form-group" (ngSubmit)="registerUser()">
           <label class="login-form-label">Email</label>
-          <input type="text" class="login-form-input mb-4" v-model="username">
+          <input id="email" name="email" type="text" class="login-form-input mb-4" [(ngModel)]="email">
+
           <label class="login-form-label">Nom</label>
-          <input type="text" class="login-form-input mb-4" v-model="username">
+          <input id="firstname" name="firstname" type="text" class="login-form-input mb-4"  [(ngModel)]="firstname">
+
           <label class="login-form-label">Prenom</label>
-          <input type="text" class="login-form-input mb-4" v-model="username">
+          <input id="lastname" name="lastname" type="text" class="login-form-input mb-4" [(ngModel)]="lastname">
+
           <label class="login-form-label">Téléphone</label>
-          <input type="text" class="login-form-input mb-4" v-model="username">
+          <input id="number" name="number" type="text" class="login-form-input mb-4" [(ngModel)]="number">
+
           <label class="login-form-label">Password</label>
-          <input type="password" class="login-form-input mb-5" v-model="password">
-          <button type="submit" class="login-form-button" @click="">Login</button>
+          <input id="password" name="password" type="password" class="login-form-input mb-5" [(ngModel)]="password">
+
+          <button type="submit"  class="login-form-button">Register</button>
 
           <div class="row pt-5">
             <div class="col-lg-6">
-              <button style="border: 0px ; background-color: transparent">
+              <button style="border: 0 ; background-color: transparent">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                   <path d="M22.3055 10.3271H21.5V10.2856H12.5V14.2856H18.1515C17.327 16.6141 15.1115 18.2856 12.5 18.2856C9.1865 18.2856 6.5 15.5991 6.5 12.2856C6.5 8.97214 9.1865 6.28564 12.5 6.28564C14.0295 6.28564 15.421 6.86264 16.4805 7.80514L19.309 4.97664C17.523 3.31214 15.134 2.28564 12.5 2.28564C6.9775 2.28564 2.5 6.76314 2.5 12.2856C2.5 17.8081 6.9775 22.2856 12.5 22.2856C18.0225 22.2856 22.5 17.8081 22.5 12.2856C22.5 11.6151 22.431 10.9606 22.3055 10.3271Z" fill="#FFC107"/>
                   <path d="M3.65283 7.63114L6.93833 10.0406C7.82733 7.83964 9.98033 6.28564 12.4998 6.28564C14.0293 6.28564 15.4208 6.86264 16.4803 7.80514L19.3088 4.97664C17.5228 3.31214 15.1338 2.28564 12.4998 2.28564C8.65883 2.28564 5.32783 4.45414 3.65283 7.63114Z" fill="#FF3D00"/>
@@ -45,7 +50,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </form>
 
         <p class="text-center login-form-text pt-4" >Already Have an Account ? <a href="/login" style="text-decoration: none !important;">SignIn</a></p>
       </div>
