@@ -1,0 +1,625 @@
+.logo,
+.logo {
+    box-sizing: border-box;
+}
+
+.logo {
+    flex-shrink: 0;
+    width: 333px;
+    height: 332px !important;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+
+.topsection {
+    background-image: url("./images/bgimg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-wrapper {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.zrayeb-djerba,
+.un-site-de-p-che-remarquable-combinant-activit-s-de-p-che-d-couverte-de-la-biodiversit {
+    color: var(--studio-darkmode-allwhite-ffffff, #ffffff);
+    font-family: 'BalooBhai-Regular', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* Adjust the margin as needed */
+}
+
+.zrayeb-djerba {
+    font-size: 61px;
+    line-height: 67px;
+}
+
+.un-site-de-p-che-remarquable-combinant-activit-s-de-p-che-d-couverte-de-la-biodiversit {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+
+.balade-main,
+.balade-main * {
+    box-sizing: border-box;
+}
+
+.balade-main {
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-47748 {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-47749 {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.duration {
+    flex-shrink: 0;
+    width: 117.35px;
+    height: 40px;
+    position: static;
+}
+
+.flight-icons {
+    width: 117.35px;
+    height: 40px;
+    position: static;
+}
+
+.line-2 {
+    border-style: dashed;
+    border-color: #cccccc;
+    border-width: 1px 0 0 0;
+    width: 103.55px;
+    height: 0px;
+    position: absolute;
+    left: 55.07px;
+    top: 19.71px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+}
+
+.ellipse-18 {
+    background: #ffffff;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #1262ae;
+    border-width: 2px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50.32px;
+    top: 14.71px;
+}
+
+.ellipse-19 {
+    background: #ffffff;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #1262ae;
+    border-width: 2px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 157.68px;
+    top: 14.29px;
+}
+
+.group {
+    width: 44.21px;
+    height: 40px;
+    position: absolute;
+    left: 86.67px;
+    top: 0px;
+    overflow: visible;
+}
+
+.djerba-tanit {
+    color: #1262ae;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    width: 181px;
+}
+
+.depart-le-9-jan-2024 {
+    color: #000000;
+    text-align: left;
+    font-family: '-', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.depart-le-9-jan-2024-span {
+    color: #000000;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.depart-le-9-jan-2024-span2 {
+    color: #000000;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.trip-menus,
+.trip-menus * {
+    box-sizing: border-box;
+}
+
+.trip-menus {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.eats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.eats-icon {
+    flex-shrink: 0;
+    width: 65.39px;
+    height: 65.39px;
+    position: relative;
+    overflow: visible;
+}
+
+.eats2 {
+    color: #8e8e94;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+.attractions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.attractions-icon {
+    flex-shrink: 0;
+    width: 65.39px;
+    height: 65.39px;
+    position: static;
+}
+
+.background2 {
+    background: #ff9b53;
+    border-radius: 16px;
+    width: 65.39px;
+    height: 65.39px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.ticket {
+    width: 31.64px;
+    height: 31.34px;
+    position: absolute;
+    right: 25.81%;
+    left: 25.81%;
+    width: 48.38%;
+    bottom: 47.08%;
+    top: 18.63%;
+    height: 34.29%;
+    overflow: visible;
+}
+
+.activit-s {
+    color: #8e8e94;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+.hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.hotel-icon {
+    flex-shrink: 0;
+    width: 65.39px;
+    height: 65.39px;
+    position: static;
+}
+
+.background3 {
+    background: #f9668d;
+    border-radius: 16px;
+    width: 65.39px;
+    height: 65.39px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.bed {
+    width: 32.06px;
+    height: 27.23px;
+    position: absolute;
+    right: 25.48%;
+    left: 25.48%;
+    width: 49.03%;
+    bottom: 49.33%;
+    top: 20.88%;
+    height: 29.79%;
+    overflow: visible;
+}
+
+.bateaux {
+    color: #8e8e94;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+.commute {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.commute-icon {
+    flex-shrink: 0;
+    width: 65.39px;
+    height: 65.39px;
+    position: relative;
+    overflow: visible;
+}
+
+.commute2 {
+    color: #8e8e94;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+.taxi {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.taxi-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 65.39px;
+    position: relative;
+    overflow: visible;
+}
+
+.taxi3 {
+    color: #8e8e94;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    width: 32.12px;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.movies-icon {
+    flex-shrink: 0;
+    width: 65.39px;
+    height: 65.39px;
+    position: relative;
+    overflow: visible;
+}
+
+.movies2 {
+    color: #8e8e94;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+}
+
+
+
+.rec-card-1,
+.rec-card-1 * {
+    box-sizing: border-box;
+}
+
+.rec-card-1 {
+    padding: 0px 16px 0px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+    box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.08);
+}
+
+.unsplash-5-mv-818-tzxeo {
+    background: linear-gradient(to left, #c4c4c4, #c4c4c4);
+    border-radius: 10px 10px 0px 0px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 242px;
+    position: relative;
+}
+
+.holiday-details {
+    background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px;
+    padding: 20px 16px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-685 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-684 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.bali {
+    color: #424242;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    align-self: stretch;
+}
+
+._4-d-3-n {
+    color: #999999;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+
+._899 {
+    color: #1262af;
+    text-align: right;
+    font-family: 'BalooBhai-Regular', sans-serif;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 400;
+    position: relative;
+}
+
+.greece-image,
+.greece-image * {
+    box-sizing: border-box;
+}
+
+.greece-image {
+    background: linear-gradient(to left, #c4c4c4, #c4c4c4);
+    width: 288px;
+    height: 182px;
+    position: relative;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.les-plates,
+.les-plates * {
+    box-sizing: border-box;
+}
+
+.les-plates {
+    color: #303030;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+}
+
+
+.holiday-details,
+.holiday-details * {
+    box-sizing: border-box;
+
+}
+
+.holiday-details {
+    background: #ffffff;
+    border-radius: 0px 0px 10px 10px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px;
+    padding: 20px 16px 20px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+    width: 182px;
+}
+
+
+.frame-685 {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.frame-684 {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.bali {
+    color: #424242;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    align-self: stretch;
+}
+
+._4-d-3-n {
+    color: #999999;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+
+._899 {
+    color: #1262af;
+    text-align: right;
+    font-family: 'BalooBhai-Regular', sans-serif;
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: 400;
+    position: relative;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+
+}
