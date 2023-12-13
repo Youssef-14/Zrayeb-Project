@@ -5,7 +5,7 @@ import { LoginpageComponent } from "./pages/loginpage/loginpage.component";
 import { AddBaladeComponent } from './pages/add-balade/add-balade.component';
 import { RegisterpageComponent } from "./pages/registerpage/registerpage.component";
 import { CalenderComponent } from "./pages/calender/calender.component";
-
+import { ListComponent } from "./pages/list/list.component"
 export const routes: Routes = [
   {
     path: '',
@@ -30,5 +30,9 @@ export const routes: Routes = [
   {
     path: 'calender',
     component: CalenderComponent,
+  },
+  {
+    path: 'listcrud',
+    component: ListComponent,
   }
 ];
