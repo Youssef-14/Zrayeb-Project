@@ -4,12 +4,12 @@
       <div class="login-form">
         <h1 class="text-center login-form-h1 pt-4 pb-4">Welcome to Zrayeb</h1>
         <p class="text-center login-form-text pb-3">Enter your Credentials to access your account</p>
-        <div class="form-group">
+        <form (ngSubmit)="registerUser()" class="form-group">
           <label class="login-form-label">Username</label>
-          <input type="text" class="login-form-input mb-4" v-model="username">
+          <input type="text" class="login-form-input mb-4" name="email" [(ngModel)]="email">
           <label class="login-form-label">Password</label>
-          <input type="password" class="login-form-input mb-5" v-model="password">
-          <button type="submit" class="login-form-button" @click="">Login</button>
+          <input type="password" class="login-form-input mb-5" name="password" [(ngModel)]="password">
+          <button type="submit" class="login-form-button">Login</button>
 
           <div class="row pt-5">
             <div class="col-lg-6">
@@ -39,7 +39,7 @@
               </button>
             </div>
           </div>
-        </div>
+        </form>
 
         <p class="text-center login-form-text pt-4" >Don't have an account? <a href="/register" style="text-decoration: none !important;">SignUp</a></p>
       </div>
