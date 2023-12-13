@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 .agenda-des-balades {
     color: var(--color-text, #303972);
     text-align: left;

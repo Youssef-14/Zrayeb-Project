@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-navbar',
@@ -10,4 +11,4 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
 
-}
+} 
