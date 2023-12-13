@@ -4,13 +4,11 @@
 }
 
 .logo {
-    flex-shrink: 0;
+
     width: 333px;
     height: 332px !important;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: -43%;
+
 }
 
 body,
