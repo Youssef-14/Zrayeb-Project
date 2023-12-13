@@ -2,7 +2,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #f0f2f5;
   margin: 0;
-  padding: 0;
+  padding: 5%;
   height: 100vh;
 }
 
@@ -79,10 +79,10 @@ textarea {
   flex-direction: row;
 }
 
-.tmp > * {
+.tmp>* {
   flex-grow: 1;
 }
 
-.tmp > *:not(:last-child) {
+.tmp>*:not(:last-child) {
   margin-left: 6px;
 }

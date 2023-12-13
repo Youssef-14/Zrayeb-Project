@@ -1,62 +1,64 @@
+<app-navbar />
 <!DOCTYPE html>
 <html lang="en" ng-app="formApp">
+
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Form Page</title>
- <link rel="stylesheet" href="add-balade.component.css">
- <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Page</title>
+  <link rel="stylesheet" href="add-balade.component.css">
+  <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
 </head>
+
 <body>
- <div ng-controller="formCtrl" class="container">
+  <div ng-controller="formCtrl" class="container">
     <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-      <!-- Form Title -->
+
       <h2>Détails de formulaire</h2>
 
       <div class="d-flex flex-row">
-          <!-- First Name -->
-          <div class="form-group flex-grow-1">
-            <label for="firstName">First Name *</label>
-            <input type="text" id="firstName" name="firstName" ng-model="user.firstName" required>
-          </div>
-          <!-- Last Name -->
-          <div class="form-group flex-grow-1 ms-2">
-            <label for="lastName">Last Name *</label>
-            <input type="text" id="lastName" name="lastName" ng-model="user.lastName" required>
-          </div>
+
+        <div class="form-group flex-grow-1">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" ng-model="user.firstName" required>
+        </div>
+
+        <div class="form-group flex-grow-1 ms-2">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" ng-model="user.lastName" required>
+        </div>
       </div>
 
       <div class="d-flex flex-row">
-          <!-- Email -->
-          <div class="form-group flex-grow-1">
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" ng-model="user.email" required>
-          </div>
-          <!-- Phone -->
-          <div class="form-group flex-grow-1 ms-2">
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" ng-model="user.phone" required>
-          </div>
+
+        <div class="form-group flex-grow-1">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" ng-model="user.email" required>
+        </div>
+
+        <div class="form-group flex-grow-1 ms-2">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" ng-model="user.phone" required>
+        </div>
       </div>
 
-      <!-- Address -->
+
       <div class="form-group">
         <label for="address">Address *</label>
         <textarea id="address" name="address" ng-model="user.address" required></textarea>
       </div>
 
-      <!-- Submit Button -->
+
       <div class="form-actions">
         <button type="submit" class="submit-button">Enregister</button>
         <button type="button" class="cancel-button" ng-click="resetForm()">Supprimer</button>
       </div>
     </form>
- </div>
+  </div>
 
- <!-- AngularJS Script -->
- <script>
+  <script>
     var app = angular.module('formApp', []);
-    app.controller('formCtrl', function($scope) {
+    app.controller('formCtrl', function ($scope) {
       $scope.user = {
         firstName: '',
         lastName: '',
@@ -65,16 +67,18 @@
         address: ''
       };
 
-      $scope.submitForm = function(isValid) {
+      $scope.submitForm = function (isValid) {
         if (isValid) {
           alert('Form submitted!');
         }
       };
 
-      $scope.resetForm = function() {
+      $scope.resetForm = function () {
         $scope.user = {};
       };
     });
- </script>
+  </script>
 </body>
+
 </html>
+<app-footer />
