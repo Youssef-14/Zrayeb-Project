@@ -1,5 +1,6 @@
 package com.l3dsi.tourismedurable.controllers;
 
+import com.l3dsi.tourismedurable.models.Balade;
 import com.l3dsi.tourismedurable.models.Reservation;
 import com.l3dsi.tourismedurable.repositories.ReservationRepository;
 import lombok.RequiredArgsConstructor;
@@ -14,7 +15,6 @@ import org.springframework.web.client.RestTemplate;
 @RequiredArgsConstructor
 public class ReservationController {
     private final ReservationRepository reservationRepository;
-    RestTemplate restTemplate;
 
     @GetMapping("/all")
     public ResponseEntity<?> getAllReservations() {
@@ -33,6 +33,7 @@ public class ReservationController {
 
     @PostMapping("/add")
     public ResponseEntity<?> addReservation(@RequestBody Reservation reservation) {
+        /*RestTemplate restTemplate = new RestTemplate();
         // Check if user exists from another service with http request
         String verifyIdUrl = "http://localhost:8222/api/v1/auth/verifyid/" + reservation.getUserId();
         ResponseEntity<Void> userVerificationResponse = restTemplate.getForEntity(verifyIdUrl, Void.class);
@@ -43,7 +44,8 @@ public class ReservationController {
         } else {
             // User does not exist, return an appropriate response
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User not found");
-        }
+        }*/
+        return ResponseEntity.ok(reservationRepository.save(reservation));
     }
 
     @PutMapping("/update")
