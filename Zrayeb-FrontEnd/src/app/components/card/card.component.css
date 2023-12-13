@@ -1,0 +1,178 @@
+.hotel-card,
+.hotel-card * {
+    box-sizing: border-box;
+}
+
+.hotel-card {
+    background: #ffffff;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #eaeaea;
+    border-width: 1px;
+    padding: 15px 13px 15px 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex: 1;
+    position: relative;
+}
+
+.matterhorn-suites-image {
+    background: linear-gradient(to left, #c4c4c4, #c4c4c4);
+    border-radius: 10px;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 200px;
+    position: relative;
+}
+
+.stay-details {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: stretch;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.stay-details-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1;
+    position: relative;
+}
+
+.entire-bungalow {
+    color: #8e8e94;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+
+.matterhorn-suites {
+    color: #303030;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+    align-self: stretch;
+}
+
+._575-night {
+    color: #303030;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    align-self: stretch;
+}
+
+.video {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.group {
+    height: auto;
+    position: absolute;
+    right: 2.9%;
+    left: 2.9%;
+    width: 94.2%;
+    bottom: 2.9%;
+    top: 2.9%;
+    height: 94.2%;
+    overflow: visible;
+}
+
+.rating {
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 19px;
+    position: static;
+}
+
+._60-reviews {
+    color: #1262af;
+    text-align: left;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    left: 66.63px;
+    top: 339px;
+    width: 216.37px;
+}
+
+.group-49 {
+    width: 44.34px;
+    height: 19px;
+    position: static;
+}
+
+._4-9 {
+    color: #303030;
+    text-align: left;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    left: 33.34px;
+    top: 339px;
+}
+
+.vector3 {
+    height: auto;
+    position: absolute;
+    right: 89.99%;
+    left: 4.39%;
+    width: 5.62%;
+    bottom: 19.41%;
+    top: 76.7%;
+    height: 3.89%;
+    overflow: visible;
+}
+
+.more-details-button {
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #ccdcec;
+    border-width: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    flex-shrink: 0;
+    height: 46px;
+    position: relative;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.12), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.20);
+    overflow: hidden;
+}
+
+.button {
+    color: #1262af;
+    text-align: left;
+    font-family: var(--components-button-large-font-family, 'Roboto-Medium', sans-serif);
+    font-size: var(--components-button-large-font-size, 15px);
+    line-height: var(--components-button-large-line-height, 26px);
+    font-weight: var(--components-button-large-font-weight, 500);
+    text-transform: uppercase;
+    position: relative;
+}
