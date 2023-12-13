@@ -19,6 +19,22 @@ html {
     padding: 0;
 }
 
+.plan-your-next-trip,
+.plan-your-next-trip * {
+    box-sizing: border-box;
+}
+
+.plan-your-next-trip {
+    color: #1262ae;
+    text-align: left;
+    font-family: 'Roboto-Bold', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    align-self: stretch;
+}
+
 
 .topsection {
     background-image: url("./images/bgimg.png");
@@ -518,11 +534,10 @@ html {
 }
 
 .greece-image {
-    background: linear-gradient(to left, #c4c4c4, #c4c4c4);
+    background: linear-gradient(to left, #9ae7fc00, #c4c4c4);
     width: 288px;
     height: 182px;
     position: relative;
-    padding: 20px;
     margin-left: 20px;
 }
 
@@ -589,7 +604,7 @@ html {
 }
 
 .bali {
-    color: #424242;
+    color: #99fdff;
     text-align: left;
     font-family: 'Roboto-Medium', sans-serif;
     font-size: 20px;
@@ -599,7 +614,7 @@ html {
 }
 
 ._4-d-3-n {
-    color: #999999;
+    color: #96f6fd;
     text-align: left;
     font-family: 'Roboto-Regular', sans-serif;
     font-size: 16px;
@@ -609,7 +624,7 @@ html {
 }
 
 ._899 {
-    color: #1262af;
+    color: #83bcf3;
     text-align: right;
     font-family: 'BalooBhai-Regular', sans-serif;
     font-size: 32px;
