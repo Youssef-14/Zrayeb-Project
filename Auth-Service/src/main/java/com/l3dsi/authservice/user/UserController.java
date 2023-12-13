@@ -22,9 +22,13 @@ public class UserController {
         return ResponseEntity.ok("all");
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/verifyid/{id}")
     public CompletableFuture<ResponseEntity<?>> getUserById(@PathVariable("id") Integer id) {
         CompletableFuture<User> userFuture = CompletableFuture.supplyAsync(() -> service.getUserById(id));
+
+        if (userFuture.isCompletedExceptionally()) {
+            return CompletableFuture.completedFuture(ResponseEntity.badRequest().build());
+        }
 
         return userFuture.thenApply(user -> {
             System.out.println(user);
