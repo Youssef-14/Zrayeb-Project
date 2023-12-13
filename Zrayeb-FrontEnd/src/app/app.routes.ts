@@ -6,6 +6,7 @@ import { AddBaladeComponent } from './pages/add-balade/add-balade.component';
 import { RegisterpageComponent } from "./pages/registerpage/registerpage.component";
 import { CalenderComponent } from "./pages/calender/calender.component";
 import { ListComponent } from "./pages/list/list.component"
+import { ErrorComponent } from "./error/error.component"
 export const routes: Routes = [
   {
     path: '',
@@ -34,5 +35,9 @@ export const routes: Routes = [
   {
     path: 'listcrud',
     component: ListComponent,
+  },
+  {
+    path: 'a',
+    component: ErrorComponent
   }
 ];

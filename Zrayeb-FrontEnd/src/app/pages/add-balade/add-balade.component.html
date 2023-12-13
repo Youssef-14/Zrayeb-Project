@@ -1,84 +1,124 @@
-<app-navbar />
-<!DOCTYPE html>
-<html lang="en" ng-app="formApp">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form Page</title>
-  <link rel="stylesheet" href="add-balade.component.css">
-  <script src="https://code.angularjs.org/1.8.2/angular.min.js"></script>
-</head>
-
-<body>
-  <div ng-controller="formCtrl" class="container">
-    <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-
-      <h2>Détails de formulaire</h2>
-
-      <div class="d-flex flex-row">
-
-        <div class="form-group flex-grow-1">
-          <label for="firstName">First Name *</label>
-          <input type="text" id="firstName" name="firstName" ng-model="user.firstName" required>
-        </div>
-
-        <div class="form-group flex-grow-1 ms-2">
-          <label for="lastName">Last Name *</label>
-          <input type="text" id="lastName" name="lastName" ng-model="user.lastName" required>
-        </div>
-      </div>
-
-      <div class="d-flex flex-row">
-
-        <div class="form-group flex-grow-1">
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" ng-model="user.email" required>
-        </div>
-
-        <div class="form-group flex-grow-1 ms-2">
-          <label for="phone">Phone *</label>
-          <input type="tel" id="phone" name="phone" ng-model="user.phone" required>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <label for="address">Address *</label>
-        <textarea id="address" name="address" ng-model="user.address" required></textarea>
-      </div>
-
-
-      <div class="form-actions">
-        <button type="submit" class="submit-button">Enregister</button>
-        <button type="button" class="cancel-button" ng-click="resetForm()">Supprimer</button>
-      </div>
-    </form>
+<div class="container-fluid mt-4">
+  <div class="top-banner d-flex flex-column gap-2 p-5">
+    <h2 class="fw-bold text-white">Stay in Los Angeles</h2>
+    <div class="d-flex gap-2">
+      <button class="btn btn-light">Recommended</button>
+      <button class="btn btn-outline-light">Price</button>
+      <button class="btn btn-outline-light">Rating</button>
+    </div>
   </div>
 
-  <script>
-    var app = angular.module('formApp', []);
-    app.controller('formCtrl', function ($scope) {
-      $scope.user = {
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        address: ''
-      };
+  <div class="d-flex align-items-center my-4 p-4">
+    <h4 class="fw-bold me-5">Reservez une Balade</h4>
+    <div class="d-flex align-items-center gap-3 ms-5">
+      <div ngbDropdown>
+        <button type="button" class="btn btn-outline-primary" id="monthsDropdown" ngbDropdownToggle
+          name="selectedMonth">
+          {{ selectedMonth }}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="monthsDropdown">
+          <button ngbDropdownItem *ngFor="let month of months">
+            {{ month }}
+          </button>
+        </div>
+      </div>
 
-      $scope.submitForm = function (isValid) {
-        if (isValid) {
-          alert('Form submitted!');
-        }
-      };
+      <div ngbDropdown>
+        <button type="button" class="btn btn-outline-primary" id="yearsDropdown" ngbDropdownToggle name="selectedYear">
+          {{ selectedYear }}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="yearsDropdown">
+          <button ngbDropdownItem *ngFor="let year of years">
+            {{ year }}
+          </button>
+        </div>
+      </div>
+      <button class="btn btn-primary">
+        <fa-icon [icon]="faAdd"></fa-icon><span class="ms-2">Reserver Balade</span>
+      </button>
+    </div>
+  </div>
 
-      $scope.resetForm = function () {
-        $scope.user = {};
-      };
-    });
-  </script>
-</body>
+  <form #userForm="ngForm" (ngSubmit)="submitForm()" novalidate
+    class="user-details-form card shadow-sm p-3 mb-5 bg-body rounded overflow-hidden">
+    <!-- Form Title -->
+    <h2 class="card-title py-3 px-4 text-white">Formulaire</h2>
 
-</html>
-<app-footer />
+    <div class="card-body">
+      <div class="row">
+        <!-- First Name -->
+        <div class="form-group col-md-6 mb-3">
+          <label for="firstName">First Name *</label>
+          <input type="text" id="firstName" name="firstName" [(ngModel)]="user.firstName" class="form-control"
+            placeholder="Enter your first name" required />
+          <div *ngIf="
+              userForm.controls['firstName']?.invalid &&
+              userForm.controls['firstName']?.touched
+            ">
+            <span class="form-text text-danger">First name is required</span>
+          </div>
+        </div>
+        <!-- Last Name -->
+        <div class="form-group col-md-6 mb-3">
+          <label for="lastName">Last Name *</label>
+          <input type="text" id="lastName" name="lastName" [(ngModel)]="user.lastName" class="form-control"
+            placeholder="Enter your last name" required />
+          <div *ngIf="
+              userForm.controls['lastName']?.invalid &&
+              userForm.controls['lastName']?.touched
+            ">
+            <span class="form-text text-danger">Last name is required</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Email -->
+        <div class="form-group col-md-6 mb-3">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" [(ngModel)]="user.email" class="form-control"
+            placeholder="Enter your email" required />
+          <div *ngIf="
+              userForm.controls['email']?.invalid &&
+              userForm.controls['email']?.touched
+            ">
+            <span class="form-text text-danger">Email is required and must be valid</span>
+          </div>
+        </div>
+        <!-- Phone -->
+        <div class="form-group col-md-6 mb-3">
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" [(ngModel)]="user.phone" class="form-control"
+            placeholder="Enter your phone number" required />
+          <div *ngIf="
+              userForm.controls['phone']?.invalid &&
+              userForm.controls['phone']?.touched
+            ">
+            <span class="form-text text-danger">Phone is required</span>
+          </div>
+        </div>
+      </div>
+      <!-- Address -->
+      <div class="form-group mb-3">
+        <label for="address">Address *</label>
+        <textarea id="address" name="address" [(ngModel)]="user.address" class="form-control"
+          placeholder="Enter your address" required></textarea>
+        <div *ngIf="
+            userForm.controls['address']?.invalid &&
+            userForm.controls['address']?.touched
+          ">
+          <span class="form-text text-danger">Address is required</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="form-actions d-flex justify-content-end">
+      <button type="submit" class="btn btn-primary me-2" [disabled]="userForm.invalid">
+        Enregister
+      </button>
+      <button type="button" class="btn btn-secondary" (click)="resetForm()">
+        Supprimer
+      </button>
+    </div>
+  </form>
+</div>
