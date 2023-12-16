@@ -2,7 +2,7 @@
 
 Ce repository  contient un projet de démonstration présentant une application basée sur une architecture de microservices, conçue pour offrir une compréhension pratique de l'architecture et de la mise en œuvre des microservices. Le projet comprend une passerelle API, un serveur de configuration, un serveur de découverte et deux microservices : Authentification et Tourisme-Durable.
 
-## Architectture
+## Architecture
 
 ![alt text](architecture.png)
 
