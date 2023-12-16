@@ -1,5 +1,6 @@
 package com.l3dsi.tourismedurable.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,6 +18,7 @@ public class Reservation {
     private int id;
 
     @ManyToOne
+    @JsonIgnore
     @JoinColumn(name = "baladeId", referencedColumnName = "id")
     private Balade balade;
 

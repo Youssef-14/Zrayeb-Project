@@ -9,20 +9,21 @@
       <th>Prix</th>
       <th>Date</th>
       <th>Reserver</th>
-      <th>Nombres de reesrvation</th>
       <th>Action</th>
+      <th>Nombres de reservation</th>
     </tr>
     </thead>
     <tbody>
     <tr *ngFor="let balade of balades">
       <td>{{ balade.prix }}</td>
       <td>{{ balade.date }}</td>
-      <td>{{ balade.reservation.length }}</td>
+
       <td><button (click)="reserveBalade(balade)">Reserver</button></td>
       <td>
-        <button (click)="editBalade(balade)">Edit</button>
         <button (click)="deleteBalade(balade)">Delete</button>
       </td>
+
+      <td>{{ balade.reservations.length }}</td>
     </tr>
     </tbody>
   </table>
