@@ -9,7 +9,7 @@ import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequestMapping("/api/v1/users")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 public class UserController {
 
@@ -22,9 +22,14 @@ public class UserController {
         return ResponseEntity.ok("all");
     }
 
-    @GetMapping("/{id}")
+    @CrossOrigin(origins = "*")
+    @GetMapping("/verifyid/{id}")
     public CompletableFuture<ResponseEntity<?>> getUserById(@PathVariable("id") Integer id) {
         CompletableFuture<User> userFuture = CompletableFuture.supplyAsync(() -> service.getUserById(id));
+
+        if (userFuture.isCompletedExceptionally()) {
+            return CompletableFuture.completedFuture(ResponseEntity.badRequest().build());
+        }
 
         return userFuture.thenApply(user -> {
             System.out.println(user);

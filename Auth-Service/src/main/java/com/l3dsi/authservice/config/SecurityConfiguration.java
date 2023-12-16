@@ -31,6 +31,7 @@ import static org.springframework.security.config.http.SessionCreationPolicy.STA
 public class SecurityConfiguration {
 
     private static final String[] WHITE_LIST_URL = {
+            "www.localhost:8070",
             "www.localhost:4200",
             "/api/v1/auth/**",
             "/api/v1/users/**",

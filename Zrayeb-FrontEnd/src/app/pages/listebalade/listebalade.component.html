@@ -1,0 +1,32 @@
+<!-- balade-list.component.html -->
+<app-navbar/>
+<div class="container">
+  <button (click)="showForm()">Add Balade</button>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Prix</th>
+      <th>Date</th>
+      <th>Reserver</th>
+      <th>Action</th>
+      <th>Nombres de reservation</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let balade of balades">
+      <td>{{ balade.prix }}</td>
+      <td>{{ balade.date }}</td>
+
+      <td><button (click)="reserveBalade(balade)">Reserver</button></td>
+      <td>
+        <button (click)="deleteBalade(balade)">Delete</button>
+      </td>
+
+      <td>{{ balade.reservations.length }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+<div style="height: 200px"></div>
+<app-footer/>
