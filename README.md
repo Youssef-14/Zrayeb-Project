@@ -1,9 +1,10 @@
 # Microservices Project
 
+Ce repository  contient un projet de démonstration présentant une application basée sur une architecture de microservices, conçue pour offrir une compréhension pratique de l'architecture et de la mise en œuvre des microservices. Le projet comprend une passerelle API, un serveur de configuration, un serveur de découverte et deux microservices : Authentification et Tourisme-Durable.
+
+## Architectture
 
 ![alt text](architecture.png)
-
-This repository contains a demo project showcasing a microservices-based application, designed to provide a hands-on understanding of microservices architecture and implementation. The project consists of an API Gateway, Config Server, Discovery Server, and two microservices: Student and School.
 
 ## Table of Contents
 
@@ -15,8 +16,8 @@ This repository contains a demo project showcasing a microservices-based applica
     - [API Gateway](#api-gateway)
     - [Config Server](#config-server)
     - [Discovery Server](#discovery-server)
-    - [Student Microservice](#student-microservice)
-    - [School Microservice](#school-microservice)
+    - [Authentification Microservice](#A=authentification-microservice)
+    - [Tourisme-Durable Microservice](#tourisme-durable-microservice)
 - [Inter-Service Communication](#inter-service-communication)
     - [Using OpenFeign](#using-openfeign)
 - [Distributed Tracing](#distributed-tracing)
@@ -51,7 +52,7 @@ Ensure you have the following software installed on your system before proceedin
 ```git clone git remote add origin git@github.com:ali-bouali/springboot-3-micro-service-demo.git```
 
 2. Navigate to the project directory:
-3. Build and package each component with Maven:
+3. Build and package each component with Maven and for frontend run npm install and ng serve:
 
 
 ## Project Components
@@ -76,9 +77,9 @@ The Discovery Server provides service registration and discovery, enabling seaml
 
 The Auth Microservice is responsible for user authentication and authorization, including user registration, login, and logout.
 
-### School Microservice
+### Tourisme Durable Microservice
 
-The School Microservice manages school-related data and operations, including adding, updating, and retrieving school records.
+The Tourisme Durable Microservice manages school-related data and operations, including adding, updating, and retrieving balades ( en francais ) records.
 
 ## Inter-Service Communication
 
@@ -99,14 +100,6 @@ Contributions are welcome! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) fo
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-[Ali Bouali] - [contact@aliboucoding.com]
-
-[Website] - [https://aliboucoding.com/courses]
-
-Project Link: https://github.com/ali-bouali/springboot-3-micro-service-demo
 
 ## Acknowledgements
 
