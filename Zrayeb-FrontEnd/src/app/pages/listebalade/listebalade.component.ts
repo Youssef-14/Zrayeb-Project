@@ -10,7 +10,7 @@ interface Balade {
   id: number;
   prix: number;
   date: string;
-  reservation: []
+  reservations: []
 }
 
 
@@ -33,10 +33,9 @@ export class ListebaladeComponent {
 
   fetchBalades(): void {
     // Fetch data from the API
-    this.http.get<Balade[]>('http://localhost:8070/api/v1/activities/all')
+    this.http.get<Balade[]>('http://localhost:8222/api/v1/activities/all')
       .subscribe(data => {
         this.balades = data;
-        console.log(data);
       });
   }
 

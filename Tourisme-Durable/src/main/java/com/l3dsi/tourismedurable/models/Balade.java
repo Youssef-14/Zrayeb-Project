@@ -1,6 +1,5 @@
 package com.l3dsi.tourismedurable.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,7 +20,6 @@ public class Balade {
     @GeneratedValue
     private int id;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "balade")
     private List<Reservation> reservations;
 

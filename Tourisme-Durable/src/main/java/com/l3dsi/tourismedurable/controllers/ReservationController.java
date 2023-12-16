@@ -2,6 +2,7 @@ package com.l3dsi.tourismedurable.controllers;
 
 import com.l3dsi.tourismedurable.models.Balade;
 import com.l3dsi.tourismedurable.models.Reservation;
+import com.l3dsi.tourismedurable.models.ReservationPDO;
 import com.l3dsi.tourismedurable.repositories.ReservationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -32,7 +33,7 @@ public class ReservationController {
     }
 
     @PostMapping("/add")
-    public ResponseEntity<?> addReservation(@RequestBody Reservation reservation) {
+    public ResponseEntity<?> addReservation(@RequestBody ReservationPDO reservation) {
         /*RestTemplate restTemplate = new RestTemplate();
         // Check if user exists from another service with http request
         String verifyIdUrl = "http://localhost:8222/api/v1/auth/verifyid/" + reservation.getUserId();
@@ -45,7 +46,11 @@ public class ReservationController {
             // User does not exist, return an appropriate response
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("User not found");
         }*/
-        return ResponseEntity.ok(reservationRepository.save(reservation));
+        //convert ReservationPDO to Reservation
+        Reservation reservation1 = new Reservation();
+        reservation1.setBalade(reservation.getBalade());
+        reservation1.setUserId(reservation.getUserId());
+        return ResponseEntity.ok(reservationRepository.save(reservation1));
     }
 
     @PutMapping("/update")
